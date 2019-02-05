@@ -46,7 +46,8 @@
                         i=0;
                     }
                     if (imgArr[i].match(/.jpg/) || imgArr[i].match(/.gif/)){
-                    $('#curtain').html("<img src='"+imgArr[i]+"'>").css("height","auto").css("width", "auto").css("max-height","100vh").css("max-width","100vw").css("object-fit", "contain");
+                    $('#curtain').html("<img src='"+imgArr[i]+"'>");
+                    $("img").css("height","auto").css("width", "auto").css("max-height","80vh").css("max-width","100vw").css("object-fit", "contain");
                     setTimeout(function(){
                         setImages(imgArr, i);
                     }, 10000);
